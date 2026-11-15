@@ -1,0 +1,1437 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a1628">
+  <!-- ============================================================
+       [EDITABLE: 1. COMPANY NAME, TITLE & SEO DESCRIPTION]
+       Change your website title and meta description below:
+       ============================================================ -->
+  <meta name="description" content="UNISTYLE UNIFORMS — Bespoke custom uniforms, clothing, and corporate apparel for businesses, healthcare, culinary, schools, and industrial field teams.">
+  <title>UNISTYLE UNIFORMS | Premium Custom Uniforms & Clothing</title>
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <!-- Google Fonts: Inter + Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ============================================================
+       [EDITABLE: 2. BROWSER TAB FAVICON]
+       Change your favicon icon file path below:
+       ============================================================ -->
+  <link rel="icon" href="./Assets/images/unistyle_logo.png" type="image/png">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================
+       CUSTOM CURSOR
+       ============================================ -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- ============================================
+       SCROLL PROGRESS BAR
+       ============================================ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-container">
+      <!-- ============================================================
+           [EDITABLE: 3. NAVBAR LOGO & BRAND NAME]
+           Change the logo image path 'src' or 'alt' text below:
+           ============================================================ -->
+      <a href="#home" class="nav-logo" aria-label="UNISTYLE UNIFORMS - Home">
+        <img src="./Assets/images/unistyle_logo.png" alt="UNISTYLE UNIFORMS Logo" width="1254" height="1254">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu nav-links" id="navMenu" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Cart Button -->
+        <button class="cart-toggle cart-icon" id="cartToggle" aria-label="Open shopping cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-gold btn-sm nav-cta">Get Quote</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer mobile-menu" id="mobileDrawer" role="navigation" aria-label="Mobile navigation">
+    <div class="mobile-drawer-header">
+      <!-- ============================================================
+           [EDITABLE: 4. MOBILE DRAWER LOGO]
+           Change the mobile logo image path below:
+           ============================================================ -->
+      <img src="./Assets/images/unistyle_logo.png" alt="UNISTYLE UNIFORMS" class="mobile-logo" width="1254" height="1254">
+      <button class="mobile-close" id="mobileClose" aria-label="Close navigation menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="mobile-drawer-links">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#products" class="mobile-link">Products</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#portfolio" class="mobile-link">Portfolio</a>
+      <a href="#testimonials" class="mobile-link">Testimonials</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-gold btn-block">Get a Free Quote</a>
+      <!-- ============================================================
+           [EDITABLE: 5. MOBILE SOCIAL MEDIA LINKS]
+           Replace '#' with your real social profile URLs below:
+           ============================================================ -->
+      <div class="mobile-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       MAIN CONTENT
+       ============================================ -->
+  <main>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home" aria-label="Hero">
+      <!-- ============================================================
+           [EDITABLE: 6. HERO BACKGROUND PHOTO]
+           Change the hero background image URL or file path below:
+           ============================================================ -->
+      <div class="hero-bg" id="heroBg">
+        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=2200&q=85" alt="Bespoke tailored uniform suit and luxury apparel" class="hero-bg-img">
+      </div>
+
+      <!-- Gradient Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Floating Geometric Shapes -->
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="shape hero-shape shape-1"></div>
+        <div class="shape hero-shape shape-2"></div>
+        <div class="shape hero-shape shape-3"></div>
+        <div class="shape hero-shape shape-4"></div>
+        <div class="shape hero-shape shape-5"></div>
+      </div>
+
+      <!-- Floating Particles -->
+      <div class="hero-particles" aria-hidden="true">
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="container hero-content">
+        <!-- ============================================================
+             [EDITABLE: 7. HERO HEADLINE, BADGE & DESCRIPTION]
+             Customize your main hero text, slogan, and description below:
+             ============================================================ -->
+        <div class="hero-text">
+          <span class="hero-badge animate-on-scroll">
+            <i class="fas fa-tshirt"></i> Premium Uniforms & Custom Apparel Since 2009
+          </span>
+          <h1 class="hero-title">
+            <span class="hero-line animate-on-scroll">Custom Uniforms.</span>
+            <span class="hero-line animate-on-scroll"><em>Tailored</em> Clothes.</span>
+            <span class="hero-line animate-on-scroll">Professional Identity.</span>
+          </h1>
+          <p class="hero-description animate-on-scroll">
+            Transform your workforce with bespoke uniform collections and customized clothing engineered for style, all-day comfort, and maximum durability. From executive corporate suits to healthcare scrubs, culinary coats, and industrial safety wear.
+          </p>
+          <div class="hero-buttons animate-on-scroll">
+            <a href="#products" class="btn btn-gold btn-glow">
+              <span>Explore Collection</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline-light">
+              <span>Request Quote</span>
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ============================================================
+             [EDITABLE: 8. HERO STATS & MILESTONE NUMBERS]
+             Change data-target="NUMBER" and labels below:
+             ============================================================ -->
+        <div class="hero-stats animate-on-scroll">
+          <div class="hero-stat">
+            <span class="hero-stat-number counter" data-target="500">0</span><span class="hero-stat-suffix">+</span>
+            <span class="hero-stat-label">Happy Clients</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number counter" data-target="10000">0</span><span class="hero-stat-suffix">+</span>
+            <span class="hero-stat-label">Uniforms Delivered</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-number counter" data-target="15">0</span><span class="hero-stat-suffix">+</span>
+            <span class="hero-stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-text">Scroll Down</span>
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MARQUEE / TICKER STRIP
+         ========================================== -->
+    <section class="marquee-section" aria-label="Trusted brands">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-content">
+          <div class="marquee-item"><i class="fas fa-cut"></i> <span>Bespoke Uniform Tailoring</span></div>
+          <div class="marquee-item"><i class="fas fa-tshirt"></i> <span>Corporate Apparel</span></div>
+          <div class="marquee-item"><i class="fas fa-user-md"></i> <span>Medical Scrubs & Coats</span></div>
+          <div class="marquee-item"><i class="fas fa-utensils"></i> <span>Culinary Chef Uniforms</span></div>
+          <div class="marquee-item"><i class="fas fa-hard-hat"></i> <span>Industrial Safety Workwear</span></div>
+          <div class="marquee-item"><i class="fas fa-graduation-cap"></i> <span>School Uniform Blazers</span></div>
+          <div class="marquee-item"><i class="fas fa-gem"></i> <span>High-Performance Fabrics</span></div>
+          <div class="marquee-item"><i class="fas fa-palette"></i> <span>Custom Crest Embroidery</span></div>
+          <div class="marquee-item"><i class="fas fa-boxes"></i> <span>Bulk Uniform Manufacturing</span></div>
+          <div class="marquee-item"><i class="fas fa-certificate"></i> <span>ISO 9001 Quality Assured</span></div>
+        </div>
+        <!-- Duplicate for infinite scroll -->
+        <div class="marquee-content" aria-hidden="true">
+          <div class="marquee-item"><i class="fas fa-cut"></i> <span>Bespoke Uniform Tailoring</span></div>
+          <div class="marquee-item"><i class="fas fa-tshirt"></i> <span>Corporate Apparel</span></div>
+          <div class="marquee-item"><i class="fas fa-user-md"></i> <span>Medical Scrubs & Coats</span></div>
+          <div class="marquee-item"><i class="fas fa-utensils"></i> <span>Culinary Chef Uniforms</span></div>
+          <div class="marquee-item"><i class="fas fa-hard-hat"></i> <span>Industrial Safety Workwear</span></div>
+          <div class="marquee-item"><i class="fas fa-graduation-cap"></i> <span>School Uniform Blazers</span></div>
+          <div class="marquee-item"><i class="fas fa-gem"></i> <span>High-Performance Fabrics</span></div>
+          <div class="marquee-item"><i class="fas fa-palette"></i> <span>Custom Crest Embroidery</span></div>
+          <div class="marquee-item"><i class="fas fa-boxes"></i> <span>Bulk Uniform Manufacturing</span></div>
+          <div class="marquee-item"><i class="fas fa-certificate"></i> <span>ISO 9001 Quality Assured</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <section class="about-section section" id="about" aria-label="About us">
+      <div class="container">
+        <div class="about-grid">
+          <!-- ============================================================
+               [EDITABLE: 9. ABOUT SECTION PHOTO & EXPERIENCE YEARS]
+               Change the about photo URL and data-target="YEARS" below:
+               ============================================================ -->
+          <div class="about-image-wrapper animate-on-scroll">
+            <div class="about-image-inner">
+              <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=1000&q=82" alt="Master tailor crafting bespoke uniform apparel and clothing with precision stitching" loading="lazy">
+              <div class="about-image-decoration"></div>
+            </div>
+            <!-- Experience Badge -->
+            <div class="about-experience-badge">
+              <span class="experience-number counter" data-target="15">0</span>
+              <span class="experience-text">Years of<br>Excellence</span>
+            </div>
+          </div>
+
+          <!-- ============================================================
+               [EDITABLE: 10. ABOUT US STORY, MISSION & TEXT]
+               Edit your company description, bio, and counters below:
+               ============================================================ -->
+          <div class="about-content">
+            <span class="section-tag animate-on-scroll"><i class="fas fa-info-circle"></i> About UNISTYLE</span>
+            <h2 class="section-title animate-on-scroll">Your Dedicated <em>Uniform & Clothing</em> Partner</h2>
+            <p class="about-lead animate-on-scroll">
+              At UNISTYLE UNIFORMS, we design and produce premium clothing and uniform collections that embody your brand's prestige, unite your workforce, and endure daily professional demands.
+            </p>
+            <p class="about-text animate-on-scroll">
+              Since 2009, we've been crafting premium uniforms for organizations across all industries. Our commitment to quality materials, precise tailoring, and innovative design has made us the preferred choice for over 500 businesses worldwide.
+            </p>
+            <p class="about-text animate-on-scroll">
+              From the initial concept to the final stitch, we collaborate closely with each client to deliver uniforms that perfectly embody their brand values and meet the practical demands of their workforce.
+            </p>
+
+            <!-- About Counters -->
+            <div class="about-counters animate-on-scroll">
+              <div class="about-counter">
+                <span class="counter" data-target="500">0</span>+
+                <small>Clients Served</small>
+              </div>
+              <div class="about-counter">
+                <span class="counter" data-target="50">0</span>+
+                <small>Industries</small>
+              </div>
+              <div class="about-counter">
+                <span class="counter" data-target="98">0</span>%
+                <small>Satisfaction</small>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-navy animate-on-scroll">
+              <span>Learn More About Us</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Company Timeline -->
+        <div class="timeline animate-on-scroll">
+          <h3 class="timeline-title">Our Journey</h3>
+          <div class="timeline-track">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2009</span>
+                <p>Founded with a vision to redefine professional uniforms</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2013</span>
+                <p>Expanded to serve healthcare and hospitality industries</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2017</span>
+                <p>Reached 200+ corporate clients milestone</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2020</span>
+                <p>Launched custom design studio and online ordering</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">2024</span>
+                <p>500+ clients across 15+ industries worldwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PRODUCT CATALOG SECTION
+         ========================================== -->
+    <section class="products-section section" id="products" aria-label="Product catalog">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-th-large"></i> Our Collection</span>
+          <h2 class="section-title">Uniform & Clothing <em>Collection</em></h2>
+          <p class="section-subtitle">Explore our wide range of professionally tailored uniforms, workwear, and custom clothing crafted with premium fabrics.</p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-tabs animate-on-scroll" role="tablist" aria-label="Filter products by category">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="corporate" role="tab" aria-selected="false">Corporate</button>
+          <button class="filter-tab" data-filter="healthcare" role="tab" aria-selected="false">Healthcare</button>
+          <button class="filter-tab" data-filter="hospitality" role="tab" aria-selected="false">Hospitality</button>
+          <button class="filter-tab" data-filter="education" role="tab" aria-selected="false">Education</button>
+          <button class="filter-tab" data-filter="industrial" role="tab" aria-selected="false">Industrial</button>
+          <button class="filter-tab" data-filter="custom" role="tab" aria-selected="false">Custom</button>
+        </div>
+
+        <!-- ============================================================
+             [EDITABLE: 11. PRODUCT CATALOG ITEMS]
+             To edit, add, or change any uniform or clothing product:
+             - data-category: 'corporate' | 'healthcare' | 'hospitality' | 'education' | 'industrial' | 'custom'
+             - data-id: Unique product ID
+             - data-name: Product title
+             - data-price: Numerical price for the quote cart
+             - data-image: Product photo URL
+             - h3.product-name: Visible product title
+             - p.product-price: Display price range text (e.g. $189 — $259)
+             ============================================================ -->
+        <div class="product-grid products-grid" id="productGrid">
+
+          <!-- Product 1 -->
+          <div class="product-card animate-on-scroll" data-category="corporate" data-id="1" data-name="Executive Blazer Suite" data-price="189" data-image="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Executive Blazer Suite" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="1" aria-label="Quick view Executive Blazer Suite">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Corporate</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Executive Blazer Suite</h3>
+              <p class="product-price price">$189 — $259</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="1" aria-label="Add Executive Blazer Suite to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card animate-on-scroll" data-category="corporate" data-id="2" data-name="Classic Dress Shirt" data-price="69" data-image="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80" alt="Classic Dress Shirt" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="2" aria-label="Quick view Classic Dress Shirt">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Corporate</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Classic Dress Shirt</h3>
+              <p class="product-price price">$69 — $99</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="2" aria-label="Add Classic Dress Shirt to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card animate-on-scroll" data-category="healthcare" data-id="3" data-name="Medical Scrubs Set" data-price="79" data-image="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Medical Scrubs Set" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="3" aria-label="Quick view Medical Scrubs Set">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Healthcare</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Medical Scrubs Set</h3>
+              <p class="product-price price">$79 — $119</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="3" aria-label="Add Medical Scrubs Set to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card animate-on-scroll" data-category="healthcare" data-id="4" data-name="Lab Coat Professional" data-price="99" data-image="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Lab Coat Professional" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="4" aria-label="Quick view Lab Coat Professional">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Healthcare</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Lab Coat Professional</h3>
+              <p class="product-price price">$99 — $139</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="4" aria-label="Add Lab Coat Professional to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card animate-on-scroll" data-category="hospitality" data-id="5" data-name="Chef Coat Premium" data-price="89" data-image="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Chef Coat Premium" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="5" aria-label="Quick view Chef Coat Premium">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Hospitality</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Chef Coat Premium</h3>
+              <p class="product-price price">$89 — $129</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="5" aria-label="Add Chef Coat Premium to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card animate-on-scroll" data-category="hospitality" data-id="6" data-name="Hotel Staff Ensemble" data-price="149" data-image="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80" alt="Hotel Staff Ensemble" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="6" aria-label="Quick view Hotel Staff Ensemble">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Hospitality</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Hotel Staff Ensemble</h3>
+              <p class="product-price price">$149 — $199</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="6" aria-label="Add Hotel Staff Ensemble to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card animate-on-scroll" data-category="education" data-id="7" data-name="School Blazer Classic" data-price="79" data-image="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="School Blazer Classic" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="7" aria-label="Quick view School Blazer Classic">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Education</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">School Blazer Classic</h3>
+              <p class="product-price price">$79 — $109</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="7" aria-label="Add School Blazer Classic to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card animate-on-scroll" data-category="education" data-id="8" data-name="Student Polo Set" data-price="39" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Student Polo Set" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="8" aria-label="Quick view Student Polo Set">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Education</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Student Polo Set</h3>
+              <p class="product-price price">$39 — $59</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="8" aria-label="Add Student Polo Set to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="product-card animate-on-scroll" data-category="industrial" data-id="9" data-name="Safety Workwear Pro" data-price="129" data-image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Safety Workwear Pro" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="9" aria-label="Quick view Safety Workwear Pro">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Industrial</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Safety Workwear Pro</h3>
+              <p class="product-price price">$129 — $179</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="9" aria-label="Add Safety Workwear Pro to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 10 -->
+          <div class="product-card animate-on-scroll" data-category="industrial" data-id="10" data-name="Hi-Vis Jacket Elite" data-price="159" data-image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="Hi-Vis Jacket Elite" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="10" aria-label="Quick view Hi-Vis Jacket Elite">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Industrial</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Hi-Vis Jacket Elite</h3>
+              <p class="product-price price">$159 — $219</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="10" aria-label="Add Hi-Vis Jacket Elite to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="product-card animate-on-scroll" data-category="custom" data-id="11" data-name="Custom Embroidered Polo" data-price="59" data-image="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80" alt="Custom Embroidered Polo" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="11" aria-label="Quick view Custom Embroidered Polo">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Custom</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Custom Embroidered Polo</h3>
+              <p class="product-price price">$59 — $89</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="11" aria-label="Add Custom Embroidered Polo to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="product-card animate-on-scroll" data-category="custom" data-id="12" data-name="Branded Team Jacket" data-price="199" data-image="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80">
+            <div class="product-image product-card-image">
+              <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80" alt="Branded Team Jacket" loading="lazy">
+              <div class="product-overlay product-card-overlay">
+                <button class="btn btn-sm btn-quick-view quick-view" data-id="12" aria-label="Quick view Branded Team Jacket">
+                  <i class="fas fa-eye"></i> Quick View
+                </button>
+              </div>
+              <span class="product-category-tag">Custom</span>
+            </div>
+            <div class="product-info product-card-info">
+              <h3 class="product-name">Branded Team Jacket</h3>
+              <p class="product-price price">$199 — $279</p>
+              <button class="btn btn-add-to-quote add-to-quote" data-id="12" aria-label="Add Branded Team Jacket to quote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         QUICK VIEW MODAL
+         ========================================== -->
+    <div class="modal-overlay quick-view-modal" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Product quick view">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="" alt="" id="modalImage">
+          </div>
+          <div class="modal-details">
+            <span class="modal-category" id="modalCategory"></span>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <p class="modal-price" id="modalPrice"></p>
+            <p class="modal-description" id="modalDescription">
+              Premium quality uniform crafted with the finest materials. Features breathable fabric, reinforced stitching, and a tailored fit designed for all-day comfort. Available in multiple sizes and customizable with your organization's branding.
+            </p>
+            <div class="modal-features">
+              <div class="modal-feature"><i class="fas fa-check-circle"></i> Premium Fabric</div>
+              <div class="modal-feature"><i class="fas fa-check-circle"></i> Custom Branding</div>
+              <div class="modal-feature"><i class="fas fa-check-circle"></i> All Sizes Available</div>
+              <div class="modal-feature"><i class="fas fa-check-circle"></i> Bulk Discount</div>
+            </div>
+            <div class="modal-actions">
+              <button class="btn btn-gold modal-add-to-quote add-to-quote" id="modalAddToQuote">
+                <i class="fas fa-plus"></i> Add to Quote
+              </button>
+              <a href="#contact" class="btn btn-outline-dark modal-contact">
+                <i class="fas fa-envelope"></i> Inquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SERVICES / FEATURES SECTION
+         ========================================== -->
+    <section class="services-section section" id="services" aria-label="Our services">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-concierge-bell"></i> Our Services</span>
+          <h2 class="section-title">Why Choose <em>UNISTYLE</em></h2>
+          <p class="section-subtitle">We offer comprehensive uniform solutions with unmatched quality and service.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h3>Custom Design</h3>
+            <p>Bespoke uniform designs tailored to your brand identity. Our expert designers bring your vision to life with precision and creativity.</p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <h3>Bulk Orders</h3>
+            <p>Scalable production for teams of any size. Competitive pricing on large orders with consistent quality across every piece.</p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Efficient production and logistics ensure your uniforms arrive on time. Rush orders available for urgent requirements.</p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Quality Guarantee</h3>
+            <p>Every uniform undergoes rigorous quality checks. We use premium fabrics and advanced manufacturing for lasting durability.</p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Free Consultation</h3>
+            <p>Complimentary expert consultation to understand your needs. We help you choose the perfect styles, fabrics, and customizations.</p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>After-Sales Support</h3>
+            <p>Dedicated support team for alterations, replacements, and reorders. We're with you long after the first delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+         ========================================== -->
+    <section class="testimonials-section section" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-quote-left"></i> Testimonials</span>
+          <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+          <p class="section-subtitle">Hear from businesses that trust UNISTYLE for their uniform needs.</p>
+        </div>
+
+        <div class="testimonial-slider" id="testimonialSlider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "UNISTYLE transformed our corporate image completely. The quality of their uniforms is exceptional, and the custom branding options perfectly represent our company values."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <strong>Sarah Johnson</strong>
+                    <span>HR Director, TechCorp Global</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "We've been ordering medical scrubs from UNISTYLE for 3 years now. Comfortable, durable, and our staff loves wearing them. Best uniform supplier we've ever worked with."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <strong>Dr. Michael Chen</strong>
+                    <span>Chief Medical Officer, City Health Center</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Our hotel chain switched to UNISTYLE last year and the difference is remarkable. The attention to detail in every piece reflects the premium service we offer our guests."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <strong>Amanda Rodriguez</strong>
+                    <span>Operations Manager, Grand Luxe Hotels</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "The safety workwear from UNISTYLE meets all compliance standards while keeping our field teams comfortable. Excellent bulk pricing and reliable delivery every time."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <strong>James Williams</strong>
+                    <span>Safety Manager, BuildRight Construction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Our school parents love the quality of the uniforms. Durable enough for active kids and smart enough for formal events. UNISTYLE understands education needs perfectly."
+                </blockquote>
+                <div class="testimonial-author">
+                  <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <div class="testimonial-info">
+                    <strong>Patricia Okafor</strong>
+                    <span>Principal, Harmony International Academy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="testimonial-controls">
+            <button class="testimonial-btn testimonial-prev slider-prev" id="testimonialPrev" aria-label="Previous testimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="testimonial-dots slider-dots" id="testimonialDots">
+              <button class="testimonial-dot active" data-index="0" aria-label="Go to testimonial 1"></button>
+              <button class="testimonial-dot" data-index="1" aria-label="Go to testimonial 2"></button>
+              <button class="testimonial-dot" data-index="2" aria-label="Go to testimonial 3"></button>
+              <button class="testimonial-dot" data-index="3" aria-label="Go to testimonial 4"></button>
+              <button class="testimonial-dot" data-index="4" aria-label="Go to testimonial 5"></button>
+            </div>
+            <button class="testimonial-btn testimonial-next slider-next" id="testimonialNext" aria-label="Next testimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY / PORTFOLIO SECTION
+         ========================================== -->
+    <section class="gallery-section section" id="portfolio" aria-label="Portfolio gallery">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-images"></i> Portfolio</span>
+          <h2 class="section-title">Our <em>Gallery</em></h2>
+          <p class="section-subtitle">Browse through our completed projects showcasing custom uniforms for diverse industries.</p>
+        </div>
+
+        <div class="gallery-masonry gallery-grid" id="galleryGrid">
+          <div class="gallery-item gallery-tall animate-on-scroll" data-index="0">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80" alt="Chef culinary uniform coat and apron" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Culinary Chef Uniforms</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-on-scroll" data-index="1">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" alt="Healthcare professionals in scrubs" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Healthcare Uniforms</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-on-scroll" data-index="2">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Executive chef in professional kitchen uniform" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Restaurant Staff</span>
+            </div>
+          </div>
+          <div class="gallery-item gallery-wide animate-on-scroll" data-index="3">
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80" alt="Garment rack with custom clothing and uniforms" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Bespoke Clothing Atelier</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-on-scroll" data-index="4">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80" alt="Custom embroidered uniform polo shirt fabric" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Embroidered Uniform Polos</span>
+            </div>
+          </div>
+          <div class="gallery-item gallery-tall animate-on-scroll" data-index="5">
+            <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=800&q=80" alt="Tailored hospitality concierge uniform apparel" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Hospitality & Hotel Attire</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-on-scroll" data-index="6">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Industrial safety vest and protective workwear" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Safety Workwear</span>
+            </div>
+          </div>
+          <div class="gallery-item animate-on-scroll" data-index="7">
+            <img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80" alt="Master tailor cutting bespoke uniform cloth and patterns" loading="lazy">
+            <div class="gallery-item-overlay">
+              <i class="fas fa-expand"></i>
+              <span>Bespoke Tailoring & Stitching</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         LIGHTBOX
+         ========================================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Next image">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightboxImage">
+      </div>
+    </div>
+
+    <!-- ==========================================
+         STATISTICS / COUNTER SECTION
+         ========================================== -->
+    <section class="stats-section section" aria-label="Company statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon"><i class="fas fa-smile-beam"></i></div>
+            <span class="stat-number counter" data-target="500">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon"><i class="fas fa-tshirt"></i></div>
+            <span class="stat-number counter" data-target="10000">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Uniforms Delivered</span>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon"><i class="fas fa-industry"></i></div>
+            <span class="stat-number counter" data-target="15">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Industries Served</span>
+          </div>
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+            <span class="stat-number counter" data-target="15">0</span>
+            <span class="stat-suffix">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ ACCORDION SECTION
+         ========================================== -->
+    <section class="faq-section section" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
+          <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+          <p class="section-subtitle">Find answers to the most common questions about our uniform services.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is the minimum order quantity?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Our minimum order quantity varies by product type. For standard uniforms, we accept orders starting from 20 pieces. Custom-designed uniforms require a minimum of 50 pieces. Contact us for specific requirements and we'll find the best solution for your team size.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>How long does production take?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Standard orders are typically completed within 2-3 weeks. Custom-designed uniforms take 3-5 weeks depending on complexity. Rush orders can be accommodated within 7-10 business days for an additional fee. We always provide a detailed timeline during consultation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I customize the uniforms with our company logo?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely! We offer multiple branding options including embroidery, screen printing, sublimation printing, and woven labels. Our design team will work with you to ensure your logo and branding elements are perfectly represented on every uniform.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you offer samples before bulk orders?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! We provide sample uniforms for approval before proceeding with bulk production. This ensures fit, fabric quality, and design meet your expectations. Sample costs are typically deducted from the bulk order price upon confirmation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What sizes are available?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We offer a comprehensive size range from XS to 5XL for most products. Custom sizing is also available for teams with specific requirements. We can arrange on-site measuring sessions for large orders to ensure perfect fit for every team member.</p>
+            </div>
+          </div>
+
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is your return and exchange policy?</span>
+              <i class="fas fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>We offer a 30-day exchange policy for sizing issues. Defective items are replaced at no charge. Custom-designed uniforms are final sale, but we ensure quality through our sample approval process. Our after-sales team is always ready to help with any concerns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         NEWSLETTER SECTION
+         ========================================== -->
+    <section class="newsletter-section" aria-label="Newsletter subscription">
+      <div class="container">
+        <div class="newsletter-content animate-on-scroll">
+          <div class="newsletter-text">
+            <h2>Stay in <em>Style</em></h2>
+            <p>Subscribe to our newsletter for the latest uniform trends, exclusive offers, and industry insights.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+              <button type="submit" class="btn btn-gold">
+                <span>Subscribe</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+            <small class="newsletter-note">No spam, unsubscribe anytime. We respect your privacy.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section class="contact-section section" id="contact" aria-label="Contact us">
+      <div class="container">
+        <div class="section-header text-center animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-envelope-open-text"></i> Contact Us</span>
+          <h2 class="section-title">Let's Create Your <em>Look</em></h2>
+          <p class="section-subtitle">Ready to transform your team's image? Get in touch with us today for a free consultation.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper animate-on-scroll">
+            <form class="contact-form" id="contactForm" novalidate>
+              <h3 class="form-title">Request a Quote</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Full Name *</label>
+                  <input type="text" id="contactName" name="name" required placeholder="Your full name" autocomplete="name">
+                  <span class="form-error error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" name="email" required placeholder="you@company.com" autocomplete="email">
+                  <span class="form-error error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel">
+                  <span class="form-error error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactCompany">Company / Organization</label>
+                  <input type="text" id="contactCompany" name="company" placeholder="Your organization" autocomplete="organization">
+                  <span class="form-error error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactIndustry">Industry</label>
+                  <select id="contactIndustry" name="industry">
+                    <option value="">Select your industry</option>
+                    <option value="corporate">Corporate & Business</option>
+                    <option value="healthcare">Healthcare & Medical</option>
+                    <option value="hospitality">Hospitality & Culinary</option>
+                    <option value="education">Education</option>
+                    <option value="industrial">Industrial & Safety</option>
+                    <option value="retail">Retail</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="form-error error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactQuantity">Estimated Quantity</label>
+                  <select id="contactQuantity" name="quantity">
+                    <option value="">Select quantity range</option>
+                    <option value="20-50">20 — 50 pieces</option>
+                    <option value="50-100">50 — 100 pieces</option>
+                    <option value="100-500">100 — 500 pieces</option>
+                    <option value="500-1000">500 — 1,000 pieces</option>
+                    <option value="1000+">1,000+ pieces</option>
+                  </select>
+                  <span class="form-error error-message"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Your Message *</label>
+                <textarea id="contactMessage" name="message" required rows="5" placeholder="Tell us about your uniform needs, preferred styles, and any special requirements..."></textarea>
+                <span class="form-error error-message"></span>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-block">
+                <span>Send Enquiry</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+              <p class="form-disclaimer">By submitting, you agree to our privacy policy. We'll respond within 24 hours.</p>
+            </form>
+          </div>
+
+          <!-- ============================================================
+               [EDITABLE: 12. CONTACT DETAILS: PHONE, EMAIL, LOCATION & HOURS]
+               Update your company telephone numbers, emails, address & hours:
+               ============================================================ -->
+          <div class="contact-info-wrapper animate-on-scroll">
+            <!-- Contact Cards -->
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-info-details">
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p> <!-- [EDIT PHONE 1] -->
+                <p>+1 (555) 765-4321</p> <!-- [EDIT PHONE 2] -->
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-details">
+                <h4>Email</h4>
+                <p>info@unistyleuniforms.com</p>   <!-- [EDIT MAIN EMAIL] -->
+                <p>orders@unistyleuniforms.com</p> <!-- [EDIT ORDERS EMAIL] -->
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info-details">
+                <h4>Location</h4>
+                <p>123 Fashion Avenue, Suite 400</p> <!-- [EDIT STREET ADDRESS] -->
+                <p>New York, NY 10001</p>            <!-- [EDIT CITY / POSTAL CODE] -->
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-info-details">
+                <h4>Working Hours</h4>
+                <p>Mon — Fri: 9:00 AM — 6:00 PM</p> <!-- [EDIT WEEKDAY HOURS] -->
+                <p>Sat: 10:00 AM — 2:00 PM</p>      <!-- [EDIT SATURDAY / WEEKEND HOURS] -->
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-placeholder">
+              <div class="map-inner">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Google Maps Integration</p>
+                <small>123 Fashion Avenue, New York, NY 10001</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- ============================================================
+             [EDITABLE: 13. FOOTER LOGO, DESCRIPTION & SOCIAL LINKS]
+             Edit footer logo, company bio, and replace '#' with your links:
+             ============================================================ -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo" aria-label="UNISTYLE UNIFORMS Home">
+            <img src="./Assets/images/unistyle_logo.png" alt="UNISTYLE UNIFORMS" width="1254" height="1254">
+          </a>
+          <p class="footer-description">Premium custom uniforms for professionals who make a difference. Quality craftsmanship, innovative design, and unmatched service since 2009.</p>
+          <div class="footer-social social-icons">
+            <!-- [EDIT SOCIAL MEDIA PROFILES: Replace '#' with your links] -->
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Industries -->
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="#products">Corporate & Office</a></li>
+            <li><a href="#products">Healthcare & Medical</a></li>
+            <li><a href="#products">Hospitality & Hotels</a></li>
+            <li><a href="#products">Education & Schools</a></li>
+            <li><a href="#products">Industrial & Safety</a></li>
+            <li><a href="#products">Custom & Branded</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to get the latest updates and offers.</p>
+          <form class="footer-newsletter-form" id="footerNewsletterForm">
+            <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+            <button type="submit" aria-label="Subscribe to newsletter"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <!-- ============================================================
+               [EDITABLE: 14. FOOTER PHONE & EMAIL]
+               ============================================================ -->
+          <div class="footer-contact-info">
+            <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>           <!-- [EDIT FOOTER PHONE] -->
+            <p><i class="fas fa-envelope"></i> info@unistyleuniforms.com</p>   <!-- [EDIT FOOTER EMAIL] -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           [EDITABLE: 15. FOOTER COPYRIGHT]
+           (Year updates automatically. Edit company name below if needed)
+           ============================================================ -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> UNISTYLE UNIFORMS. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       SHOPPING CART SIDEBAR
+       ============================================ -->
+  <div class="cart-overlay cart-sidebar-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar" role="complementary" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Your Quote Cart</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Cart items will be dynamically inserted here -->
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fas fa-shopping-bag"></i>
+        <p>Your cart is empty</p>
+        <a href="#products" class="btn btn-outline-dark btn-sm">Browse Products</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total">
+        <span>Estimated Total:</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <a href="#contact" class="btn btn-gold btn-block cart-checkout">
+        <span>Request Quote</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <button class="btn btn-outline-dark btn-block btn-sm cart-clear" id="cartClear">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- ============================================
+       BACK TO TOP BUTTON
+       ============================================ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ============================================================
+       [EDITABLE: 16. WHATSAPP FLOATING BUTTON]
+       - Change phone number '15551234567' (include country code, no + or spaces)
+       - Change greeting text after 'text=' (use %20 for spaces)
+       ============================================================ -->
+  <a href="https://wa.me/15551234567?text=Hello%20UNISTYLE!%20I'm%20interested%20in%20your%20uniform%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ============================================
+       TOAST NOTIFICATION CONTAINER
+       ============================================ -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>

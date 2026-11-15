@@ -1,0 +1,13 @@
+{
+  "name": "UNISTYLE UNIFORMS",
+  "short_name": "UNISTYLE",
+  "description": "Premium custom uniform solutions for teams that make a lasting impression.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#142b49",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
