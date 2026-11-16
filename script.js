@@ -30,7 +30,7 @@
 
     // [EDITABLE: Quote Cart Message Template auto-filled into Contact Form]
     formatQuoteMessage: (itemsSummary, totalVal) =>
-      `Hello UNISTYLE team,\n\nI would like to request an official quotation for the following uniform items:\n\n${itemsSummary}\n\nEstimated Total: $${totalVal.toFixed(2)}\n\nPlease provide sizing recommendations, bulk pricing, and lead time.`,
+      `Hello UNISTYLE team,\n\nI would like to request an official quotation for the following uniform items:\n\n${itemsSummary}\n\nEstimated Total: QAR ${totalVal.toFixed(2)}\n\nPlease provide sizing recommendations, bulk pricing, and lead time.`,
   };
 
   /* ──────────────────────────────────────────────────────────
@@ -276,13 +276,25 @@
    *  5.  PRODUCT CATALOG & PERSISTENT CART
    * ────────────────────────────────────────────────────────── */
 
-  const CART_STORAGE_KEY = 'unistyle_cart';
+  const CART_STORAGE_KEY = 'unistyle_cart_qar';
+  const LEGACY_CART_STORAGE_KEY = 'unistyle_cart';
 
   // Load cart from localStorage
   let cart = [];
   try {
     const saved = localStorage.getItem(CART_STORAGE_KEY);
-    if (saved) cart = JSON.parse(saved);
+    if (saved) {
+      cart = JSON.parse(saved);
+    } else {
+      const legacyCart = localStorage.getItem(LEGACY_CART_STORAGE_KEY);
+      if (legacyCart) {
+        cart = JSON.parse(legacyCart).map((item) => ({
+          ...item,
+          price: Math.round(parseFloat(item.price) * 3.64 * 100) / 100,
+        }));
+        localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+      }
+    }
   } catch (err) {
     cart = [];
   }
@@ -368,7 +380,7 @@
             <img src="${item.image}" alt="${item.name}" class="cart-item-image" loading="lazy">
             <div class="cart-item-details">
               <h4 class="cart-item-name">${item.name}</h4>
-              <span class="cart-item-price">$${item.price.toFixed(2)}</span>
+              <span class="cart-item-price">QAR ${item.price.toFixed(2)}</span>
               <div class="cart-item-quantity">
                 <button class="qty-btn qty-minus" data-id="${item.id}" aria-label="Decrease quantity">−</button>
                 <span class="qty-value">${item.quantity}</span>
@@ -385,7 +397,7 @@
     // Update total calculation
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     if (totalDisplay) {
-      totalDisplay.textContent = `$${total.toFixed(2)}`;
+      totalDisplay.textContent = `QAR ${total.toFixed(2)}`;
     }
   };
 
@@ -471,7 +483,7 @@
 
       const cardImg = card.querySelector('img')?.src || card.dataset.image || '';
       const cardTitle = card.dataset.name || card.querySelector('.product-name, h3')?.textContent?.trim() || 'Uniform';
-      const cardPrice = card.dataset.price ? `$${card.dataset.price}` : card.querySelector('.product-price, .price')?.textContent || '$99';
+      const cardPrice = card.dataset.price ? `QAR ${card.dataset.price}` : card.querySelector('.product-price, .price')?.textContent || 'QAR 99';
       const cardCat = card.dataset.category || 'Uniform';
 
       if (img) img.src = cardImg;
@@ -624,9 +636,9 @@
         closeCart();
         const messageField = $('#contactForm textarea, textarea[name="message"]');
         if (messageField && cart.length > 0) {
-          const itemsSummary = cart.map((i) => `• ${i.name} (Qty: ${i.quantity}, est. $${(i.price * i.quantity).toFixed(2)})`).join('\n');
+          const itemsSummary = cart.map((i) => `• ${i.name} (Qty: ${i.quantity}, est. QAR ${(i.price * i.quantity).toFixed(2)})`).join('\n');
           const totalVal = cart.reduce((s, i) => s + i.price * i.quantity, 0);
-          messageField.value = `Hello UNISTYLE team,\n\nI would like to request an official quotation for the following uniform items:\n\n${itemsSummary}\n\nEstimated Total: $${totalVal.toFixed(2)}\n\nPlease provide sizing recommendations, bulk pricing, and lead time.`;
+          messageField.value = `Hello UNISTYLE team,\n\nI would like to request an official quotation for the following uniform items:\n\n${itemsSummary}\n\nEstimated Total: QAR ${totalVal.toFixed(2)}\n\nPlease provide sizing recommendations, bulk pricing, and lead time.`;
         }
       });
     }
